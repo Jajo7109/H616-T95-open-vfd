@@ -1,0 +1,2 @@
+/linux_openvfd/driver/protocols/i2c_sw.o /linux_openvfd/driver/protocols/i2c_hw.o /linux_openvfd/driver/protocols/spi_sw.o /linux_openvfd/driver/controllers/dummy.o /linux_openvfd/driver/controllers/seg7_ctrl.o /linux_openvfd/driver/controllers/fd628.o /linux_openvfd/driver/controllers/fd650.o /linux_openvfd/driver/controllers/hd44780.o /linux_openvfd/driver/controllers/gfx_mono_ctrl.o /linux_openvfd/driver/controllers/ssd1306.o /linux_openvfd/driver/controllers/pcd8544.o /linux_openvfd/driver/controllers/il3829.o /linux_openvfd/driver/openvfd_drv.o
+
