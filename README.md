@@ -16,4 +16,5 @@ How to enable OpenVFD Service for TV BOX running armbian...
 
 1. Download kernel headers for Allwinner armbian-config -> Software -> Headers_install
 2. Install kernel headers with apt-get install -y build-essential linux-headers-edge-sunxi64
-3. 
+3. Copy openvfd.dts to /boot/dtb/allwinner/overlay/ and run armbian-add-overlay /boot/dtb/allwinner/overlay/openvfd.dts
+4. 
