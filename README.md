@@ -12,3 +12,8 @@ In addition it supports HD44780 text based LCD displays, using an I2C backpack.
 
 Courtesy of Arthur Lieberman, a version was created that allows the insertion of pin numbers greater than 255.
 
+How to enable OpenVFD Service for TV BOX running armbian...
+
+1. Download kernel headers for Allwinner armbian-config -> Software -> Headers_install
+2. Install kernel headers with apt-get install -y build-essential linux-headers-edge-sunxi64
+3. 
