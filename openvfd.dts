@@ -1,0 +1,22 @@
+/dts-v1/;
+/plugin/;
+/ {
+   fragment@0 {
+      target-path = "/";
+      __overlay__ {
+         openvfd {
+            compatible = "openvfd,vfd";
+            dev_name = "openvfd";
+            vfd_gpio_clk = <0x00 0x10B 0x00>;
+            vfd_gpio_dat = <0x00 0x10C 0x00>;
+            vfd_gpio_stb = <0x00 0x00 0xFF>;
+            vfd_gpio_chip_name = "300b000.pinctrl";
+            vfd_chars = [00 01 02 03 04];
+            vfd_dot_bits = [00 01 02 03 04 05 06];
+            vfd_display_type = <0x01 0x00 0x00 0x06>;
+            status = "okay";
+         };
+      };
+   };
+};
+
