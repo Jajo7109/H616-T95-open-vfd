@@ -18,7 +18,7 @@ How to enable OpenVFD Service for TV BOX running armbian...
 2. Install kernel headers with apt-get install -y build-essential linux-headers-edge-sunxi64
 3. Copy openvfd.dts to /boot/dtb/allwinner/overlay/ and run armbian-add-overlay /boot/dtb/allwinner/overlay/openvfd.dts
 4. reboot to install the overlays openvfd.dtb
-5. git clone https://github.com/Jajo7109/H616-T95-open-vfd.git
+5. cd / and git clone https://github.com/Jajo7109/H616-T95-open-vfd.git
 6. Run sudo ln -sf /boot/System.map-$(uname -r) /lib/modules/$(uname -r)/build/System.map
 7. Run make -j 4 within linux_openvfd/driver folder
 8. Run sudo depmod -a
