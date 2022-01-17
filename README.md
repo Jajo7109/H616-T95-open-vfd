@@ -20,8 +20,12 @@ How to enable OpenVFD Service for TV BOX running armbian...
 4. reboot to install the overlays openvfd.dtb
 5. cd / and git clone https://github.com/Jajo7109/H616-T95-open-vfd.git
 6. Run sudo ln -sf /boot/System.map-$(uname -r) /lib/modules/$(uname -r)/build/System.map
-7. Run make -j 4 within linux_openvfd/driver folder
+7. Run make -j 4 within H616-T95-open-vfd/driver folder
 8. Run sudo depmod -a
 9. Run sudo make modules_install
-10. Verify if our openvfd module is successfully installed/loaded by lsmod. If not, run sudo modprobe openvfd.
-11. 
+10. Verify if our openvfd module is successfully installed/loaded by lsmod. If not, run sudo modprobe openvfd
+11. Run make OpenVFDService within H616-T95-open-vfd folder. Add executable priviledge by running chmod +x
+12. Copy cp openvfd.service /etc/systemd/system/openvfd.service
+13. Run systemctl enable openvfd.service
+14. Run systemctl start openvfd.service
+The display should show the current time depending on the time zone.
